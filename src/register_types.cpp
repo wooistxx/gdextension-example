@@ -3,6 +3,7 @@
 #include <godot_cpp/core/class_db.hpp>
 #include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/godot.hpp>
+#include "MyNode2D.h"
 
 using namespace godot;
 
@@ -11,7 +12,7 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level)
 	if (p_level != MODULE_INITIALIZATION_LEVEL_SCENE) {
 		return;
 	}
-	//ClassDB::register_class<YourClass>();
+	ClassDB::register_class<MyNode2D>();
 }
 
 void uninitialize_gdextension_types(ModuleInitializationLevel p_level) {
